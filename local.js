@@ -29,9 +29,9 @@ function showItem(){
         const {itemText,random}=local[i]
         show +=`
     <div class="bg-gray-200 font-semibold text-lg py-3 px-5 m-3 text-black flex items-center justify-between">
-        <p>${i}/</p>
-        <p>${itemText}</p>
-        <p class="text-sm text-gray-600">${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}</p>
+        <p class="text-sm">${i}/</p>
+        <p class="text-sm">${itemText}</p>
+        <p class="text-sm text-gray-600">${new Date().getDate()}/${new Date().getMonth()+1}/${new Date().getFullYear()}</p>
         <p class="text-gray-500 text-base">Pin : ${random}</p>
         <button onclick="deleteItem('${random}')"><i class="fa-regular fa-trash-can text-red-600 hover:text-red-700"></i></button>
     </div>
