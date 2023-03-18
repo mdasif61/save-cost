@@ -8,6 +8,8 @@ function info(){
 
     if(nameText=="bismillah" && passText==131361){
         location.href="index.html"
+    }else{
+        alert("please fill input")
     }
     userName.value="";
     password.value="";
