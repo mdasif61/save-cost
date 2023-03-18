@@ -73,6 +73,7 @@ const deleteItem=(random)=>{
     const local=JSON.parse(localStorage.getItem("all"));
     const searchDelete= local.filter(item=>item.random!=random);
     localStorage.setItem("all",JSON.stringify(searchDelete))
+    location.reload()
     showItem()
 }
 
@@ -80,6 +81,7 @@ const clearBtn=()=>{
    const check= confirm("are you sure?");
    if(check){
     localStorage.clear();
+    location.reload()
    }
     showItem();
 }
