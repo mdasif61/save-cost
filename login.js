@@ -7,7 +7,7 @@ function info(){
     const passText=password.value;
 
     if(nameText=="bismillah" && passText==131361){
-        location.href="index.html"
+        location.href="main.html"
     }else{
         alert("please fill input")
     }
